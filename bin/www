@@ -7,6 +7,9 @@
 var app = require('../app');
 var debug = require('debug')('loginsystem:server');
 var http = require('http');
+const mongoose = require('mongoose');
+mongoose.connect('mongodb+srv://umangchodavadiya:umang123@cluster0.dz7yvhs.mongodb.net/neelkanth')
+  .then(console.log('database connection established'))
 
 /**
  * Get port from environment and store in Express.
